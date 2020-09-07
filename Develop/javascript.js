@@ -2,7 +2,7 @@
 var timeDisplay = $("#currentDay");
 var theDay = moment();
 // Instantiate a Moment Object
-  timeDisplay.text(theDay.format("dddd, MMMM Do"));
+  timeDisplay.text(theDay.format("dddd MMMM Do YYYY, h:mm:s a"));
 
 $("textarea").blur()
 
@@ -50,4 +50,4 @@ $(document).ready(function() {
 
 // style with jQuery
 
-$('.display-3').css
+$('.display-3').css();
