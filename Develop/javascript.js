@@ -1,8 +1,9 @@
+// Matthew Cowley
 // Current Date Moment.js
 var timeDisplay = $("#currentDay");
-var theDay = moment();
+var Day = moment();
 // Moment Object with current time
-  timeDisplay.text(theDay.format("dddd MMMM Do YYYY, h:mm:ss a"));
+  timeDisplay.text(Day.format("dddd MMMM Do YYYY, h:mm:ss a"));
 
 $("textarea").blur()
 
@@ -51,6 +52,5 @@ $('.display-3').css('color', 'black');
 
 $('.display-3').css('border', 'solid');
 $('.display-3').css('border-radius', '10px');
-$('.display-3').css('box-shadow', 'black');
-
+$('.display-3').css('box-shadow', '5px', '5px', '5px', 'black');
 $('.lead').css('color', 'black');
