@@ -1,8 +1,8 @@
-// Current Date // Moment.jf
+// Current Date Moment.js
 var timeDisplay = $("#currentDay");
 var theDay = moment();
-// Instantiate a Moment Object
-  timeDisplay.text(theDay.format("dddd MMMM Do YYYY, h:mm:s a"));
+// Moment Object with current time
+  timeDisplay.text(theDay.format("dddd MMMM Do YYYY, h:mm:ss a"));
 
 $("textarea").blur()
 
@@ -24,7 +24,7 @@ var taskNotification = function() {
 }
 taskNotification();
 
-setInterval(taskNotification,1000 * 10);
+setInterval(taskNotification,36000 * 100);
 
 // Save Function
 $(document).ready(function() {
@@ -34,20 +34,23 @@ $(document).ready(function() {
 
       localStorage.setItem(hourSave, taskToDo);
   })
-  $("#hour8 .description").val(localStorage.getItem("hour8"));
-  $("#hour9 .description").val(localStorage.getItem("hour9"));
-  $("#hour10 .description").val(localStorage.getItem("hour10"));
-  $("#hour11 .description").val(localStorage.getItem("hour11"));
-  $("#hour12 .description").val(localStorage.getItem("hour12"));
-  $("#hour13 .description").val(localStorage.getItem("hour13"));
-  $("#hour14 .description").val(localStorage.getItem("hour14"));
-  $("#hour15 .description").val(localStorage.getItem("hour15"));
-  $("#hour16 .description").val(localStorage.getItem("hour16"));
-  $("#hour17 .description").val(localStorage.getItem("hour17"));
-  $("#hour18 .description").val(localStorage.getItem("hour18"));
-  $("#hour19 .description").val(localStorage.getItem("hour19"));
+
+  $("#h9 .description").val(localStorage.getItem("hour9"));
+  $("#h10 .description").val(localStorage.getItem("hour10"));
+  $("#h11 .description").val(localStorage.getItem("hour11"));
+  $("#h12 .description").val(localStorage.getItem("hour12"));
+  $("#h13 .description").val(localStorage.getItem("hour13"));
+  $("#h14 .description").val(localStorage.getItem("hour14"));
+  $("#h15 .description").val(localStorage.getItem("hour15"));
+  $("#h16 .description").val(localStorage.getItem("hour16"));
+  $("#h17 .description").val(localStorage.getItem("hour17"));
 })
 
 // style with jQuery
+$('.display-3').css('color', 'black');
 
-$('.display-3').css();
+$('.display-3').css('border', 'solid');
+$('.display-3').css('border-radius', '10px');
+$('.display-3').css('box-shadow', 'black');
+
+$('.lead').css('color', 'black');
